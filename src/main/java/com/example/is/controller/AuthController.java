@@ -70,7 +70,7 @@ public class AuthController {
         });
         users.setRoles(roles);
         userService.save(users);
-        return new ResponseEntity<>(new ResponseMessage("Tạo mới thành công"), HttpStatus.OK);
+        return new ResponseEntity<>(new ResponseMessage("Đăng kí thành công"), HttpStatus.OK);
     }
 
     @PostMapping("/signIn")
